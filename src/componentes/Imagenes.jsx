@@ -1,5 +1,7 @@
 
-export function Imagenes() {
+
+// Aqui van las rutas de las imagenes o urls
+export const Imagenes = () => {
   const data = [
     {
       imageLink:
@@ -11,8 +13,6 @@ export function Imagenes() {
     },
   ];
 
+  return data;
 
-
-
-  
-}
+};
