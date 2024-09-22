@@ -1,6 +1,5 @@
 
 
-// Aqui van las rutas de las imagenes o urls
 export const Imagenes = () => {
   const data = [
     {

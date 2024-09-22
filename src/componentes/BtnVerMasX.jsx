@@ -1,16 +1,16 @@
 import React from 'react';
 
-const Button = ({
+const BtnVerMasX = ({
   buttonText,
   backgroundColor = "#D6BD98",
   textColor = "white",
   width = "auto",
   height = "auto",
   padding = "py-2 px-4",
-  margin = "mb-4",
-  borderWidth = "20px", // Grosor del borde
-  borderColor = "black", // Color del borde
-  borderRadius = "rounded-3xl", // Radio del borde
+  margin = "mb-0",
+  borderWidth = "20px",
+  borderColor = "black",
+  borderRadius = "rounded-3xl",
   onClick,
   className = ""
 }) => {
@@ -25,4 +25,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export default BtnVerMasX;

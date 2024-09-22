@@ -1,5 +1,7 @@
 import React from "react";
 import { Oportunidades } from './pages/Oportunidades';
+import { Noticias } from './pages/Noticias';
+
 import './index.css'; 
 import './App.css'
 
@@ -12,8 +14,8 @@ function App() {
     {/* <Modelo de inclusion/> */}
     {/* <Oferta Educativa/> */}
     <Oportunidades/>
-    {/* <seccion blanca/> */}
-    {/* <Noticias/> */}
+    <div className="bg-red-800 p-6"></div>
+    <Noticias/>
     {/* <Footer/> */}
     </div>
 
