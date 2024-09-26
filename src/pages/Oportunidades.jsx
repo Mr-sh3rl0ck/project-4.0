@@ -1,19 +1,38 @@
-import React from "react";
 import { CardsOport } from '../componentes/CardsOport';
-import { Imagenes } from "../componentes/Imagenes";
-import TituloBlanco from '../componentes/TituloBlanco'; 
 import BtnVerMasX from '../componentes/BtnVerMasX'; 
+import becas from '../assets/becas.jpg';
 
 export function Oportunidades() {
-  const data = Imagenes(); // Llamamos a la función para obtener las imágenes
+
+  const data = [
+    {
+      image: becas,
+    },
+    {
+      image: becas,
+    },
+
+  ];
 
   return (
     <div className="relative w-full">
-      <TituloBlanco text1="Vida Estudiantil" text2="Oportunidades Para" text3="El Estudiante(a)"/>
+      
+      <div className='flex relative mt-28'>
+        <h1 className="text-xl font-semibold text-white ml-10">Vida Estudiantil</h1>
+        <div className='ml-60'>
+        <h1 className="text-6xl font-bold text-white text-center ml-52">
+          Oportunidades
+          </h1>
+          <h1 className="text-6xl font-bold text-white text-center mb-12 ml-72">
+          para el estudiante
+        </h1>
+        </div>
+      </div>
+
 
       <div className="relative w-full flex flex-col lg:flex-row justify-center items-center mt-5 lg:space-x-10">
         <img
-          src={data[0].imageLink} // Usamos la primera imagen del array data
+          src={data[0].image} // Usamos la primera imagen del array data
           alt="Descripción de la imagen"
           className="object-cover w-[900px] lg:w-[700px] h-[300px] md:h-[350px] lg:h-[400px] rounded-3xl mb-6 lg:mb-0 lg:mr-5"
         />
@@ -33,7 +52,7 @@ export function Oportunidades() {
           marginRight="lg:mr-5 mt-10 mb-5 "
         />
         <img
-          src={data[1].imageLink} // Usamos la segunda imagen del array data
+          src={data[1].image} // Usamos la segunda imagen del array data
           alt="Descripción de la imagen"
           className="object-cover w-[900px] lg:w-[700px] h-[300px] md:h-[350px] lg:h-[400px] rounded-3xl"
         />

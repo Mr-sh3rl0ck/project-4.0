@@ -1,9 +1,9 @@
-import React from "react";
 import { Oportunidades } from './pages/Oportunidades';
 import { Noticias } from './pages/Noticias';
 
 import './index.css'; 
 import './App.css'
+import SeccionModelo from "./componentes/sections/SeccionDos";
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
     <div className="App">
     {/* <Navbar/> */}
     {/* <1inicio/> */}
-    {/* <Modelo de inclusion/> */}
+    <SeccionModelo/>
+    <div className="bg-[#D6BD98] py-96"></div>
     {/* <Oferta Educativa/> */}
     <Oportunidades/>
     <div className="bg-red-800 p-6"></div>

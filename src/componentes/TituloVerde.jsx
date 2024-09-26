@@ -1,4 +1,4 @@
-import React from 'react';
+import prototype from 'prop-types';
 
 const TituloBeige = ({ text1, text2 }) => {
   return (
@@ -16,6 +16,12 @@ const TituloBeige = ({ text1, text2 }) => {
     </div>
 
   );
+};
+
+
+TituloBeige.propTypes = {
+  text1: prototype.string.isRequired,
+  text2: prototype.string.isRequired,
 };
 
 export default TituloBeige;

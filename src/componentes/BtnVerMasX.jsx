@@ -1,4 +1,4 @@
-import React from 'react';
+import prototype from 'prop-types';
 
 const BtnVerMasX = ({
   buttonText,
@@ -23,6 +23,23 @@ const BtnVerMasX = ({
       {buttonText}
     </button>
   );
+};
+
+// sirve para darle estilos
+
+BtnVerMasX.propTypes = {
+  buttonText: prototype.string,
+  backgroundColor: prototype.string,
+  textColor: prototype.string,
+  width: prototype.string,
+  height: prototype.string,
+  padding: prototype.string,
+  margin: prototype.string,
+  borderWidth: prototype.string,
+  borderColor: prototype.string,
+  borderRadius: prototype.string,
+  onClick: prototype.func,
+  className: prototype.string
 };
 
 export default BtnVerMasX;
