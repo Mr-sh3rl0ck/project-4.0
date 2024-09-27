@@ -29,7 +29,7 @@ export function Oportunidades() {
         <img
           src={data[0].image}
           alt="Descripción de la imagen"
-          className="object-cover w-[900px] lg:w-[700px] h-[300px] md:h-[350px] lg:h-[400px] rounded-3xl mb-6 lg:mb-0 lg:mr-5"
+          className="object-cover w-[900px] lg:w-[700px] h-[300px] md:h-[350px] lg:h-[400px] rounded-3xl mb-6 lg:mb-0 lg:mr-5 relative z-0  transition-all duration-300 hover:scale-105"
         />
         <CardsOport
           title="BECAS"
@@ -44,12 +44,12 @@ export function Oportunidades() {
           title="Actividades Extracurriculares"
           description="The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to 'Naviglio' where you can enjoy the main night life in Barcelona."
           buttonText="Ver Más"
-          marginRight="lg:mr-5 mt-10 mb-5 "
+          marginRight="lg:mr-5 mt-5 mb-5"
         />
         <img
           src={data[1].image} // Usamos la segunda imagen del array data
           alt="Descripción de la imagen"
-          className="object-cover w-[900px] lg:w-[700px] h-[300px] md:h-[350px] lg:h-[400px] rounded-3xl"
+          className="object-cover w-[900px] lg:w-[700px] h-[300px] md:h-[350px] lg:h-[400px] rounded-3xl relative z-0  transition-all duration-300 hover:scale-105"
         />
       </div>
       
@@ -63,8 +63,9 @@ export function Oportunidades() {
             margin="mt-2 mb-6"
             borderWidth="2px"
             borderColor="white"
+            className='relative z-0  transition-all duration-300 hover:scale-105'
             onClick={() => alert('Button Clicked')}
-        />
+          />
 </div>
 
     </div>

@@ -25,6 +25,8 @@ const CardsNoticias = ({ image, description, title, link }) => {
         width="120px"
         height="40px"
         margin="mb-0"
+        borderWidth="2px"
+        borderColor="#133816"
         onClick={() => alert('Button Clicked')}
       />
   </div>

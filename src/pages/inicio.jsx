@@ -9,8 +9,8 @@ const Inicio = () => {
             <section className='banner'>
                 <span className='carpeta'><NavLink to='/'><img src={Logo} alt="Logo de la UT"/></NavLink></span>
                 <div className='titulo'>
-                    <h1>Universidad Tecnologica</h1>
-                    <p>
+                <h1 className="text-6xl font-bold text-white py-4">Universidad Tecnologica</h1>
+                    <p className=" text-white ">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Veniam sed perferendis vero at. Dolore ratione amet accusamus 
                         cum veniam perferendis, voluptatum reiciendis natus libero, deleniti, 
