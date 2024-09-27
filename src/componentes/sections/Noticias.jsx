@@ -1,6 +1,5 @@
 import React from "react";
-import TresCardNoticias from '../componentes/TresCardNoticias';  // Asegúrate de usar el nombre correcto
-import TituloVerde from "../componentes/TituloVerde";
+import TresCardNoticias from '../CardsNoticias';  // Asegúrate de usar el nombre correcto
 
 
 export const Noticias = () => {
@@ -29,18 +28,20 @@ export const Noticias = () => {
   ];
 
   return (
-    <div className="bg-[#D6BD98] text-black">
-        <TituloVerde text1="NOTICIAS" text2="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ab ducimus reprehenderit,
-        qui autem aliquid nisi, possimus officia provident mollitia est ratione odio quos molestias enim earum eligendi rem inventore."/>
+    <div className="bg-[#D6BD98] text-black py-12">
 
-      <div className="grid place-items-center my-20 mx-4">
+      <div className="relative flex mt-28">
+        <h1 className="text-xl font-semibold text-[#40534C] ml-10">Vida Estudiantil</h1>
+        <div className="ml-96">
+          <h1 className="text-6xl font-bold text-[#40534C] text-center ">Noticias</h1>
+        </div>
+      </div>
+
+      
+
+      <div className="grid place-items-center my-20 mx-4 ">
         <TresCardNoticias noticias={noticias} />
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 };

@@ -1,5 +1,5 @@
-import { Oportunidades } from './pages/Oportunidades';
-import { Noticias } from './pages/Noticias';
+import { Oportunidades } from './componentes/sections/Oportunidades';
+import { Noticias } from './componentes/sections//Noticias';
 
 import './index.css'; 
 import './App.css'
@@ -15,7 +15,7 @@ function App() {
     <div className="bg-[#D6BD98] py-96"></div>
     {/* <Oferta Educativa/> */}
     <Oportunidades/>
-    <div className="bg-red-800 p-6"></div>
+    <div className="bg-gray-800 py-20"></div>
     <Noticias/>
     {/* <Footer/> */}
     </div>

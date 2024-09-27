@@ -1,6 +1,6 @@
-import { CardsOport } from '../componentes/CardsOport';
-import BtnVerMasX from '../componentes/BtnVerMasX'; 
-import becas from '../assets/becas.jpg';
+import CardsOport from '../CardOportunidades';
+import BtnVerMasX from '../BtnVerMasX'; 
+import becas from '../../assets/becas.jpg';
 
 export function Oportunidades() {
 
@@ -16,23 +16,18 @@ export function Oportunidades() {
 
   return (
     <div className="relative w-full">
-      
-      <div className='flex relative mt-28'>
+
+      <div className="relative flex mt-28">
         <h1 className="text-xl font-semibold text-white ml-10">Vida Estudiantil</h1>
-        <div className='ml-60'>
-        <h1 className="text-6xl font-bold text-white text-center ml-52">
-          Oportunidades
-          </h1>
-          <h1 className="text-6xl font-bold text-white text-center mb-12 ml-72">
-          para el estudiante
-        </h1>
+        <div className="ml-96">
+          <h1 className="text-6xl font-bold text-white text-center ">Oportunidades para</h1>
+          <h1 className="text-6xl font-bold text-white text-center mb-12 ">el estudiante</h1>
         </div>
       </div>
 
-
       <div className="relative w-full flex flex-col lg:flex-row justify-center items-center mt-5 lg:space-x-10">
         <img
-          src={data[0].image} // Usamos la primera imagen del array data
+          src={data[0].image}
           alt="Descripción de la imagen"
           className="object-cover w-[900px] lg:w-[700px] h-[300px] md:h-[350px] lg:h-[400px] rounded-3xl mb-6 lg:mb-0 lg:mr-5"
         />
@@ -58,15 +53,20 @@ export function Oportunidades() {
         />
       </div>
       
-      <BtnVerMasX
-        buttonText="Ver Más"
-        backgroundColor="#D6BD9800"
-        textColor="white"
-        width="120px"
-        height="40px"
-        margin="mt-2 mb-6"
-        onClick={() => alert('Button Clicked')}
-      />
+      <div className="flex justify-center items-center py-10">
+        <BtnVerMasX
+            buttonText="Ver Más"
+            backgroundColor="#D6BD9800"
+            textColor="white"
+            width="120px"
+            height="40px"
+            margin="mt-2 mb-6"
+            borderWidth="2px"
+            borderColor="white"
+            onClick={() => alert('Button Clicked')}
+        />
+</div>
+
     </div>
   );
 }
