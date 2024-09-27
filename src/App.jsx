@@ -1,15 +1,18 @@
 import { Oportunidades } from './componentes/sections/Oportunidades';
-import { Noticias } from './componentes/sections//Noticias';
+import { Noticias } from './componentes/sections/Noticias';
 
 import './index.css'; 
 import './App.css'
 import SeccionModelo from "./componentes/sections/SeccionDos";
+import NavBar from "./componentes/NavBar";
 
 function App() {
   return (
     <>
+    {/*NavBar*/}
+    <NavBar/>
+    <Outlet/>  
     <div className="App">
-    {/* <Navbar/> */}
     {/* <1inicio/> */}
     <SeccionModelo/>
     <div className="bg-[#D6BD98] py-96"></div>
@@ -19,7 +22,6 @@ function App() {
     <Noticias/>
     {/* <Footer/> */}
     </div>
-
     </>
   )
 }
